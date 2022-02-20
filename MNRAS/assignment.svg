@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+ ******************************
+	a = 360
+	e = 3/4
+
+	b = 238.11762
+
+	cos(E) =1/2
+	sin(E) =sqrt(3)/2
+
+	cos(f) =-2/5
+	sin(f) =sqrt(21)/5
+ ******************************
+ -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+	 xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 width="600" height="500" viewBox="0 0 600 500" version="1.1">
+
+	<metadata>
+		<rdf:RDF>
+			<rdf:Description about="Eccentric_and_True_Anomaly.svg">
+				<dc:title>Eccentric and True Anomaly</dc:title>
+				<dc:format>image/svg+xml</dc:format>
+			</rdf:Description>
+		</rdf:RDF>
+	</metadata>
+
+	<title>Eccentric and True Anomaly</title>
+
+	<defs />
+
+<g transform="translate(200,400)">
+
+	<g fill="none" stroke="black" stroke-width="2">
+		<circle stroke="blue" r="360"/>
+
+		<!-- incircle -->
+		<g stroke="green" transform="rotate(-135)">
+			<circle r="238.11762"/>
+			<path d="M0,0 h238.11762" />
+		</g>
+
+		<ellipse stroke="red" stroke-width="5" rx="360" ry="238.11762"/>
+
+		<!-- major-axis -->
+		<path d="M-200,0 h600" />
+
+		<!-- vertical line -->
+		<path d="M180,0 V-311.769145" />
+
+		<!-- radius C-P' -->
+		<g transform="rotate(-60)">
+			<path stroke="blue" d="M0,0 h360" />
+		</g>
+
+		<!-- Eccetric anomaly E -->
+		<path stroke="blue"
+			 d="M70,0 a70,70 0 0,0 -35,-60.621778" />
+
+		<!-- radius F-P -->
+		<path stroke="red" d="M270,0 L180,-206.21591" />
+
+		<!-- true anomaly f -->
+		<path stroke="red"
+			 d="M320,0 a50,50 0 0,0 -70,-45.825757" />
+	</g>
+
+	<g fill="none" stroke="black" stroke-width="1">
+		<!-- CF -->
+		<path d="M0,20 v20 m0,-10 h270 m0,-10 v20" />
+	</g>
+
+	<g fill="black">
+		<!-- centre "C" -->
+		<circle r="5"/>
+
+		<!-- apsis "A" -->
+		<circle r="5" cx="360"/>
+
+		<!-- focus "F" -->
+		<circle r="5" cx="270"/>
+
+		<!-- point P -->
+		<circle fill="red" stroke="red" stroke-width="3" r="9" cx="180" cy="-206.21591"/>
+
+		<!-- point P' -->
+		<circle r="5" cx="180" cy="-311.769145"/>
+	</g>
+
+
+	<g style="font-size: x-large">
+		<text x="-25" y="25">C</text>
+		<text x="275" y="25">F</text>
+		<text x="365" y="25">A</text>
+
+		<text x="195" y="-205">P</text>
+		<text x="195" y="-315">P′</text>
+
+		<g style="font-style:italic">
+			<text fill="blue" x="60" y="-150">a</text>
+			<text fill="green" x="-80" y="-100">b</text>
+			<text x="120" y="50">e・a</text>
+
+			<text x="30" y="-10">E</text>
+			<text x="280" y="-10">f</text>
+		</g>
+	</g>
+
+</g>
+
+</svg>
